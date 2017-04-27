@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group91.hackathon2017.idc.electrachallenge.WelcomeActivity"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:text="מסך פתיחה"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_welcomeTitle"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:text="התחל סקירה"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_welcomeStart1"
+            android:textColorHighlight="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <TextView
+            android:text="(30 שניות"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_welcomeStart2"
+            android:textColorHighlight="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_below="@+id/textView_welcomeStart1"
+            android:layout_alignStart="@+id/textView_welcomeStart1"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

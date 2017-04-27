@@ -17,11 +17,6 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        /*if (savedInstanceState == null) {
-            Preferences.initializeMissions();
-            Preferences.setMission(0);
-        }*/
-
         textView = (TextView) findViewById(R.id.textView_splash);
         textView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in));
 
@@ -30,7 +25,7 @@ public class SplashActivity extends Activity {
 
     private Runnable mLaunchTask = new Runnable() {
         public void run() {
-            Intent i = new Intent(getApplicationContext(), MainMenuActivity.class);
+            Intent i = new Intent(getApplicationContext(), WelcomeActivity.class);
             startActivityForResult(i, 0);
 
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
