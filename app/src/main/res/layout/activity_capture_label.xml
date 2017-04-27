@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="group91.hackathon2017.idc.electrachallenge.CaptureLabelActivity"
+    android:background="#181818">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp"
+        android:background="#f58322"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:text="צילום תוית המזגן"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_captureLabelTitle"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_captureLabelOpenCamera"
+        android:layout_width="300dp"
+        android:layout_alignTop="@+id/imageView_captureLabelTavit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/open_camera_button"
+        android:onClick="onClick" />
+
+    <TextView
+        android:text="מצא את התוית על גבי המזגן:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_captureLabelSubtitle"
+        android:layout_marginTop="17dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_below="@+id/textView_captureLabelSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView_captureLabelTavit"
+        android:src="@drawable/tavit"
+        android:layout_height="75dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:background="#f58322">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_captureLabelLogo"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/electra_white_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/help_button"
+            android:id="@+id/imageView_captureLabelHelp"
+            android:layout_centerVertical="false"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="13dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView_captureLabelProg"
+        android:layout_height="15dp"
+        android:layout_below="@+id/imageView_captureLabelOpenCamera"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/slider_1" />
+
+    <TextView
+        android:text="שלב 1 מתוך 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_captureLabelStartProg"
+        android:layout_below="@+id/imageView_captureLabelProg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

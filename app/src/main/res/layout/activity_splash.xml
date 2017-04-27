@@ -7,15 +7,5 @@
     tools:context="group91.hackathon2017.idc.electrachallenge.SplashActivity"
     android:background="@drawable/splash_background">
 
-    <TextView
-        android:text="I forgot our slogan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="229dp"
-        android:id="@+id/textView_splash"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 

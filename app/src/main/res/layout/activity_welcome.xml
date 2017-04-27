@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="group91.hackathon2017.idc.electrachallenge.WelcomeActivity"
-    android:background="@android:color/white">
+    android:background="#181818">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_height="50dp"
-        android:background="@android:color/holo_blue_light">
+        android:background="#f58322">
 
         <TextView
-            android:text="מסך פתיחה"
+            android:text="סקירה מהירה"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/textView_welcomeTitle"
@@ -25,36 +26,69 @@
             android:textStyle="bold" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_welcomeElectra"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/imageView_welcomeButtonStartScan"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/electra_white_logo" />
+
+    <ImageView
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:background="@android:color/darker_gray">
+        android:id="@+id/imageView_welcomeButtonStartScan"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:onClick="onClick"
+        android:src="@drawable/start_scan_button" />
+
+    <TextView
+        android:text="עניין של דקה"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_welcomeButtonStartScan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView_welcomeTag"
+        android:textSize="25sp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_welcomeRabbit"
+        android:layout_alignTop="@+id/textView_welcomeTag"
+        android:layout_toEndOf="@+id/textView_welcomeTag"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/rabbit" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        android:background="#f58322">
 
         <TextView
-            android:text="התחל סקירה"
+            android:text="תקלות קודמות"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/textView_welcomeStart1"
-            android:textColorHighlight="@android:color/white"
+            android:layout_height="match_parent"
+            android:id="@+id/textView_welcomePreviousErrors"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:textSize="30sp"
-            android:gravity="center" />
+            android:textSize="20sp" />
 
-        <TextView
-            android:text="(30 שניות"
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView_welcomeStart2"
-            android:textColorHighlight="@android:color/white"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
-            android:layout_below="@+id/textView_welcomeStart1"
-            android:layout_alignStart="@+id/textView_welcomeStart1"
-            android:gravity="center" />
+            android:layout_alignTop="@+id/relativeLayout2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/imageView_welcomeHelpButton"
+            android:src="@drawable/help_button" />
     </RelativeLayout>
 
 </RelativeLayout>

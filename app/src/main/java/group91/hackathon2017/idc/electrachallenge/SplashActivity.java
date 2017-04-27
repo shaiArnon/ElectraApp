@@ -17,9 +17,6 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        textView = (TextView) findViewById(R.id.textView_splash);
-        textView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in));
-
         handler.postDelayed(mLaunchTask, 5000);
     }
 
@@ -40,4 +37,5 @@ public class SplashActivity extends Activity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
+
 }

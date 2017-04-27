@@ -13,9 +13,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -24,7 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".CaptureLabelActivity" />
+        <activity android:name=".CaptureLedActivity"></activity>
     </application>
 
 </manifest>
